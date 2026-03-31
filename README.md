@@ -5,7 +5,7 @@ Prepare for any meeting by analyzing documents, emails, and context. Claude gene
 ## Install
 
 ```bash
-claude plugin add github:MissionRelearn/meeting-prep
+claude plugin add github:annetklo/meeting-prep
 ```
 
 ## Usage
