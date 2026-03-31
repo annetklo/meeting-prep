@@ -1,8 +1,8 @@
 ---
 name: meeting-prep
 description: Prepare for a meeting by analyzing source documents, feedback, and correspondence to create a structured preparation document with talking points and strategy
-argument-hint: [--context "description"] [--person "Name, Role, Organization"] [--documents file1 file2 ...] [--email "paste email text"] [--output-dir DIR] [--lang en|nl]
-allowed-tools: Bash(python3:*), Bash(node:*), Bash(pandoc:*), Read, Write, Edit, Glob, Grep, WebFetch, WebSearch
+argument-hint: '[--context "description"] [--person "Name, Role"] [--documents file1 file2] [--lang en|nl]'
+license: MIT
 ---
 
 # Meeting Preparation Skill
