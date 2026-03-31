@@ -32,6 +32,30 @@ You give Claude your meeting documents (briefings, proposals, feedback, emails) 
 
 Output is a .docx (if python-docx is installed) or .md file.
 
+## Example output
+
+```
+## A. Summary
+
+Smith's core message: Acme wants to integrate but needs clarity on data
+ownership and timeline. Tone is constructive, with underlying concern
+about vendor lock-in.
+
+## B. Position Analysis
+
+### 1. Data ownership
+- **What they say**: "We need full export capability at any point."
+- **Why it matters**: This signals past bad experiences with vendor lock-in.
+- **Your position**: Confirm you support full data portability. Ask what
+  export formats they need.
+
+### 2. Timeline pressure
+- **What they say**: "Q3 launch is non-negotiable."
+- **Why it matters**: Leaves 10 weeks for integration work.
+- **Your position**: Propose a phased rollout: core API by week 6, full
+  feature set by week 10.
+```
+
 ## Options
 
 | Flag | Description | Default |
@@ -54,4 +78,4 @@ Default output is English. Use `--lang nl` for Dutch section headers and content
 
 ## License
 
-MIT
+MIT — Built by [Mission Relearn](https://missionrelearn.com), an AI consultancy in the Netherlands.
