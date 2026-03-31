@@ -1,0 +1,8 @@
+{
+  "name": "meeting-prep",
+  "version": "1.0.0",
+  "description": "Prepare for any meeting by analyzing documents, emails, and context. Generates a structured preparation document with talking points, strategy, and pitfalls to avoid.",
+  "author": "Mission Relearn",
+  "license": "MIT",
+  "homepage": "https://github.com/MissionRelearn/meeting-prep"
+}
