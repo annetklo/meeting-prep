@@ -1,11 +1,18 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "meeting-prep",
   "description": "Meeting preparation plugins by Mission Relearn",
+  "owner": {
+    "name": "Annet Kloprogge",
+    "email": "annet@missionrelearn.com"
+  },
   "plugins": [
     {
       "name": "meeting-prep",
       "description": "Prepare for any meeting by analyzing documents, emails, and context. Generates a structured preparation document with talking points, strategy, and pitfalls to avoid.",
-      "skills": ["skills/meeting-prep"]
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/annetklo/meeting-prep"
     }
   ]
 }
