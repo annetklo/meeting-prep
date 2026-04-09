@@ -1,50 +1,52 @@
-# Meeting Prep - Claude Code Plugin
+# Meeting Prep: Claude Plugin
 
 Prepare for any meeting by analyzing documents, emails, and context. Claude generates a structured preparation document with talking points, conversation strategy, and pitfalls to avoid.
+
+Built by [Mission Relearn](https://missionrelearn.com), an AI-literacy consultancy in the Netherlands.
 
 ## Install
 
 ### Option A: Claude Code (CLI)
 
-If you have [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed:
+Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code), the terminal tool.
 
-**Step 1** — Open a terminal and start Claude Code:
+**Step 1:** Open a terminal and start Claude Code:
 ```bash
 claude
 ```
 
-**Step 2** — Add this repository as a plugin marketplace:
+**Step 2:** Add this repository as a plugin marketplace:
 ```
 /plugin marketplace add annetklo/meeting-prep
 ```
 
-**Step 3** — Install the plugin:
+**Step 3:** Install the plugin:
 ```
-/plugin install meeting-prep@annetklo-meeting-prep
+/plugin install meeting-prep@meeting-prep
 ```
 
-Done. The `/meeting-prep` command is now available in all your Claude Code sessions.
+Done. The `/meeting-prep` skill is now available in all your Claude Code sessions.
 
-### Option B: Claude.ai (browser)
+### Option B: Claude.ai (browser, no install)
 
-You can use this skill in claude.ai without installing anything.
+You can use this skill directly in claude.ai without installing anything.
 
-**Step 1** — Go to [claude.ai](https://claude.ai) and create a new Project (sidebar > Projects > New Project).
+**Step 1:** Go to [claude.ai](https://claude.ai) and create a new Project (sidebar > Projects > New Project).
 
-**Step 2** — Open the project, click "Set project instructions", and paste the contents of [`skills/meeting-prep/SKILL.md`](skills/meeting-prep/SKILL.md) into the instructions field.
+**Step 2:** Open the project, click "Set project instructions", and paste the contents of [`skills/meeting-prep/SKILL.md`](skills/meeting-prep/SKILL.md) into the instructions field.
 
-**Step 3** — Start a conversation in the project. Upload your meeting documents (PDFs, emails, notes) and say:
+**Step 3:** Start a conversation in the project. Upload your meeting documents (PDFs, emails, notes) and say:
 
 ```
 Prepare me for a meeting with Jane Smith, CTO at Acme Corp.
 The topic is a partnership discussion about platform integration.
 ```
 
-Claude will follow the same structured workflow and produce a meeting prep document.
+Claude follows the same structured workflow and produces a meeting prep document.
 
 ## Usage
 
-Interactive (Claude will ask what it needs):
+Interactive (Claude asks what it needs):
 ```
 /meeting-prep
 ```
@@ -107,9 +109,21 @@ Default output is English. Use `--lang nl` for Dutch section headers and content
 
 ## Requirements
 
-- [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) (terminal tool, not claude.ai in the browser)
+**Option A (CLI):**
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed
 - Optional: `python-docx` for .docx output (`pip install python-docx`)
+
+**Option B (browser):**
+- A [claude.ai](https://claude.ai) account (free or paid)
+
+## Troubleshooting
+
+**"command not found" when running `claude`:** Install Claude Code first: `npm install -g @anthropic-ai/claude-code`
+
+**Plugin install fails:** Make sure you completed step 2 first (`/plugin marketplace add annetklo/meeting-prep`). The marketplace must be added before you can install.
+
+**Using claude.ai in the browser?** Skip the CLI steps entirely, use Option B above.
 
 ## License
 
-MIT — Built by [Mission Relearn](https://missionrelearn.com), an AI-literacy consultancy in the Netherlands.
+MIT
