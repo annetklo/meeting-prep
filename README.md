@@ -25,6 +25,11 @@ claude
 /plugin install meeting-prep@meeting-prep
 ```
 
+**Step 4:** Enable the plugin:
+```
+/plugin enable meeting-prep
+```
+
 Done. The `/meeting-prep` skill is now available in all your Claude Code sessions.
 
 ### Option B: Claude.ai (browser, no install)
