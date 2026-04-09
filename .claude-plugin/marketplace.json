@@ -1,0 +1,11 @@
+{
+  "name": "meeting-prep",
+  "description": "Meeting preparation plugins by Mission Relearn",
+  "plugins": [
+    {
+      "name": "meeting-prep",
+      "description": "Prepare for any meeting by analyzing documents, emails, and context. Generates a structured preparation document with talking points, strategy, and pitfalls to avoid.",
+      "skills": ["skills/meeting-prep"]
+    }
+  ]
+}

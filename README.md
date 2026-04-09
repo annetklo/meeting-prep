@@ -4,9 +4,43 @@ Prepare for any meeting by analyzing documents, emails, and context. Claude gene
 
 ## Install
 
+### Option A: Claude Code (CLI)
+
+If you have [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed:
+
+**Step 1** — Open a terminal and start Claude Code:
 ```bash
-claude plugin add github:annetklo/meeting-prep
+claude
 ```
+
+**Step 2** — Add this repository as a plugin marketplace:
+```
+/plugin marketplace add annetklo/meeting-prep
+```
+
+**Step 3** — Install the plugin:
+```
+/plugin install meeting-prep@annetklo-meeting-prep
+```
+
+Done. The `/meeting-prep` command is now available in all your Claude Code sessions.
+
+### Option B: Claude.ai (browser)
+
+You can use this skill in claude.ai without installing anything.
+
+**Step 1** — Go to [claude.ai](https://claude.ai) and create a new Project (sidebar > Projects > New Project).
+
+**Step 2** — Open the project, click "Set project instructions", and paste the contents of [`skills/meeting-prep/SKILL.md`](skills/meeting-prep/SKILL.md) into the instructions field.
+
+**Step 3** — Start a conversation in the project. Upload your meeting documents (PDFs, emails, notes) and say:
+
+```
+Prepare me for a meeting with Jane Smith, CTO at Acme Corp.
+The topic is a partnership discussion about platform integration.
+```
+
+Claude will follow the same structured workflow and produce a meeting prep document.
 
 ## Usage
 
@@ -73,9 +107,9 @@ Default output is English. Use `--lang nl` for Dutch section headers and content
 
 ## Requirements
 
-- Claude Code CLI
+- [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) (terminal tool, not claude.ai in the browser)
 - Optional: `python-docx` for .docx output (`pip install python-docx`)
 
 ## License
 
-MIT — Built by [Mission Relearn](https://missionrelearn.com), an AI consultancy in the Netherlands.
+MIT — Built by [Mission Relearn](https://missionrelearn.com), an AI-literacy consultancy in the Netherlands.
